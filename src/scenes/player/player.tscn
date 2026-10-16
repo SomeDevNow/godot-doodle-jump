@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dsokrj5gkrnt8"]
+
+[ext_resource type="Script" uid="uid://yndg6cnnvm8x" path="res://src/scenes/player/player.gd" id="1_swhsd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oyahe"]
+size = Vector2(32, 32)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2hxd0"]
+albedo_color = Color(0.2784314, 0.38039216, 0.6784314, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_oyahe"]
+material = SubResource("StandardMaterial3D_2hxd0")
+
+[node name="Player" type="CharacterBody2D" unique_id=1052722357]
+script = ExtResource("1_swhsd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1668575651]
+shape = SubResource("RectangleShape2D_oyahe")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1846446174]
+visible = false
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1381743227]
+modulate = Color(0.2784314, 0.38039216, 0.6784314, 1)
+position = Vector2(0, -9.797513e-07)
+scale = Vector2(32, 31.999998)
+mesh = SubResource("QuadMesh_oyahe")
