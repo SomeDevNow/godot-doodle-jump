@@ -1,3 +1,3 @@
 # doodle-jump
 
-A Godot project
+A Doodle Jump clone made in Godot
