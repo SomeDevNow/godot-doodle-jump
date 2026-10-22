@@ -12,6 +12,7 @@ albedo_color = Color(0.2784314, 0.38039216, 0.6784314, 1)
 material = SubResource("StandardMaterial3D_2hxd0")
 
 [node name="Player" type="CharacterBody2D" unique_id=1052722357]
+collision_mask = 2
 script = ExtResource("1_swhsd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1668575651]

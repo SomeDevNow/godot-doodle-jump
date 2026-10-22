@@ -6,9 +6,11 @@ size = Vector2(62, 18)
 [sub_resource type="QuadMesh" id="QuadMesh_dk8d7"]
 
 [node name="Platform" type="StaticBody2D" unique_id=693971848]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1376777606]
 shape = SubResource("RectangleShape2D_oyahe")
+one_way_collision = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=683660503]
 visible = false
