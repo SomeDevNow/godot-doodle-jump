@@ -1,4 +1,4 @@
-extends Node2D
+extends Node
 
 const PLATFORM_SCENE: PackedScene = preload("res://src/scenes/platforms/platform.tscn")
 var platform_spawn_rate: int = 72
@@ -21,7 +21,7 @@ func _process(_delta: float):
 
 func spawn_platform(platform_scene: PackedScene, platform_position: Vector2):
 	var platform = platform_scene.instantiate()
-	add_child(platform)
+	$Platforms.add_child(platform)
 	
 	platform.position.y = platform_position.y
 	platform.position.x = platform_position.x
